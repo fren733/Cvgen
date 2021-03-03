@@ -1,0 +1,53 @@
+<div class="item-crd">
+    <div class="crd-title">
+        <div class="title-btns">
+            <h6 class="bold">{{ title }}</h6>
+            <div>
+                <button (click)="onDelete()" class="btn-icon"><i class="fas fa-trash"></i></button>
+                <button *ngIf="isCollapsed" (click)="toggleCollapse()" class="btn-icon"><i class="fas fa-chevron-up"></i></button>
+                <button *ngIf="!isCollapsed" (click)="toggleCollapse()" class="btn-icon"><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isCollapsed">
+        <div class="sec-single">
+            <div class="crd">
+                <p class="sm-text">Nazwa uczelni</p>
+                <input class="inpt" type="text">
+                <i class="fas fa-check-circle field-ok"></i>
+            </div>
+        </div>
+        <div class="sec-single">
+            <div class="crd">
+                <p class="sm-text">Miasto</p>
+                <input class="inpt" type="text">
+                <i class="fas fa-check-circle field-ok"></i>
+            </div>
+            
+        </div>
+        <div class="sec-double">
+            <div class="crd">
+                <p class="sm-text">Stopień naukowy</p>
+                <input class="inpt" type="text">
+                <i class="fas fa-check-circle field-ok"></i>
+            </div>
+            <div class="crd">
+                <p class="sm-text">Kierunek studiów</p>
+                <input class="inpt" type="text">
+                <i class="fas fa-check-circle field-ok"></i>
+            </div>
+        </div>
+        <div class="sec-double">
+            <div class="crd">
+                <p class="sm-text">Data rozpoczęcia</p>
+                <input class="inpt" type="date">
+                <i class="fas fa-check-circle field-ok"></i>
+            </div>
+            <div class="crd">
+                <p class="sm-text">Data zakończenia</p>
+                <input class="inpt" type="date">
+                <i class="fas fa-check-circle field-ok"></i>
+            </div>
+        </div>
+    </div>
+</div>

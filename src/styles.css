@@ -1,1 +1,147 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+body {
+  font-family:'Lato', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  /* background:rgba(51, 51, 51, 0.8); */
+  background:transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn-1 {
+
+}
+
+.btn-2 {
+  outline: none;
+  background: rgb(221, 221, 221);
+  color: rgb(88, 88, 88);
+  border: none;
+  border-radius: 5px;
+  padding: 0.3em 0.7em;
+  margin-right:0.5em;
+}
+
+.btn-2:focus { outline:none; }
+.btn-2:hover { background:rgba(221,221,221,0.7) }
+
+.sm-text {
+  font-size: 0.8em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.6);
+}
+
+.field-ok {
+  color: rgb(22, 103, 209);
+}
+
+.crd,
+.item-crd,
+.item-crd-lg {
+  background: rgba(0,0,0,0.03);
+  border: rgb(207, 207, 207) solid 1px;
+  border-radius: 5px;
+  padding:0.3em 0 0.3em 1em;
+}
+
+.item-crd, .item-crd-lg {
+  background:transparent;
+  padding:1em;
+  margin:1em 0;
+}
+
+.item-crd-lg { 
+  height: 95vh;
+  padding-bottom:1em;
+}
+
+.items-list {
+  overflow-y:auto;
+  height: 75vh;
+}
+
+.crd-title {
+  padding:1em 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1em;
+}
+
+.title-btns {
+  display:grid;
+  grid-template-columns: auto 5em;
+}
+
+.btn-icon {
+  background: transparent;
+  border: none;
+  margin:0 0.3em;
+  color:rgb(83, 83, 83);
+}
+.btn-icon:focus {outline:none;}
+.btn-icon:hover{color:rgb(133, 133, 133);}
+
+.inpt,
+.input:focus {
+    background: transparent;
+    border:transparent 1px solid;
+    outline: none;
+    padding: 0;
+}
+
+
+.sec-single {
+  margin: 1em 0;
+}
+
+.sec-double div,
+.sec-single div {
+  display: grid;
+  grid-template-columns: auto 4em;
+}
+
+.sec-single div {grid-template-columns:auto 4em;}
+
+.sec-double {
+  margin: 1.5em 0;
+  display:grid;
+  grid-template-columns: 49% 49%; 
+  grid-column-gap: 1em;
+}
+
+.sec-single div i,
+.sec-double div i {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin: auto;
+}
+
+.btn-pack {
+  margin: 1em 0;
+}

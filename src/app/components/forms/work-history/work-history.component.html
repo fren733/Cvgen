@@ -1,0 +1,19 @@
+<div>
+    <div class="crd-title">
+        <h5>Doświadczenie</h5>
+        <p class="sm-text">Zostaw puste pola, jeśli nie mają być wyświetlane</p>
+    </div>
+    <div>
+        <button class="btn-2">
+            <span><i class="fas fa-cog"></i> Ustawienia sekcji</span>
+        </button>
+        <button class="btn-2" (click)="addWorkItem()">
+            <span><i class="fas fa-plus"></i> Dodaj stanowisko</span>
+        </button>
+    </div>
+    <div class="items-list">
+        <div #worklist>
+            <app-work-history-item></app-work-history-item>
+        </div>
+    </div>
+</div>

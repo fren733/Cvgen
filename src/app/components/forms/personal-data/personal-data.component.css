@@ -1,0 +1,48 @@
+.sec-single-file {
+    margin: 1.5em 0;
+    display:grid;
+    grid-template-columns: 4em auto; 
+    grid-column-gap: 1em;
+    padding: 1.5em 1em;
+    background: rgba(0,0,0,0.03);
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 5px;
+}
+
+.sec-double-date {
+    display:grid;
+    grid-template-columns: 49% 30%; 
+    grid-column-gap: 1em;
+    margin: 1.5em 0;
+}
+
+.sec-double-date div {
+    display: grid;
+    grid-template-columns: auto 5em;
+}
+
+.sec-double-date div i {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+}
+
+.btn-photo-load {
+    border: 0px;
+    padding: 0;
+    margin: 0;
+}
+.btn-photo-load:focus {
+    outline:none;
+}
+
+.preview-photo {
+    width: 4em;
+    height:4em;
+}
+.btn-photo-load:hover {
+    background: rgba(0,0,0,0.4);
+    cursor:pointer;
+}

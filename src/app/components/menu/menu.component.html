@@ -1,0 +1,70 @@
+
+<nav class="main-menu">
+    <div class="title">Test</div>
+    <ul class="main-menu-list">
+        <li class="has-subnav">
+            <div (click)="toggleCollapse()">
+                <i class="fa fa-home"></i>
+                <span class="nav-text">
+                    <a type="button" id="sec-1"> Napisz CV</a>
+                </span>
+                <i class="fas fa-chevron-down nav-drop"></i>
+            </div>
+            <ul *ngIf="!isCollapsedWrite">
+                <li class="li-item">
+                    <a type="button" href="#">Dane osobowe</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Doświadczenie</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Wykształcenie</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Podsumowanie</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Tekst</a>
+                </li>
+            </ul>
+        </li>
+        <li class="has-subnav">
+            <div (click)="toggleCollapseFormat()">
+                <i class="fa fa-laptop"></i>
+                <span class="nav-text">
+                    Formatuj CV
+                </span>
+                <i class="fas fa-chevron-down nav-drop"></i>
+            </div>
+            <ul *ngIf="!isCollapsedFormat">
+                <li class="li-item">
+                    <a type="button" href="#">Czcionki</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Marginesy</a>
+                </li>
+
+            </ul>            
+        </li>
+        <li class="has-subnav">
+            <div (click)="toggleCollapseLook()">
+               <i class="fa fa-list"></i>
+                <span class="nav-text">
+                    Edytuj wygląd
+                </span>
+                <i class="fas fa-chevron-down nav-drop"></i>
+            </div>
+            <ul *ngIf="!isCollapsedLook">
+                <li class="li-item">
+                    <a type="button" href="#">Kolory</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Szablony</a>
+                </li>
+                <li class="li-item">
+                    <a type="button" href="#">Układ sekcji</a>
+                </li>
+            </ul>     
+        </li>
+    </ul>
+</nav>

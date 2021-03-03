@@ -1,0 +1,17 @@
+    <div class="crd-title">
+        <h5>Wykształcenie</h5>
+        <p class="sm-text">Zostaw puste pola, jeśli nie mają być wyświetlane</p>
+    </div>
+    <div class="btn-pack">
+        <button class="btn-2">
+            <span><i class="fas fa-cog"></i> Ustawienia sekcji</span>
+        </button>
+        <button class="btn-2" (click)="addEducationItem()">
+            <span><i class="fas fa-plus"></i> Dodaj uczelnię</span>
+        </button>
+    </div>
+    <div class="items-list">
+        <div #edulist>
+            <app-education-item></app-education-item>
+        </div>
+    </div>
